@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView_orderdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Order Details:"
+                    android:textColor="@color/color_blue_title"
+                    android:textSize="@dimen/space_l"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_order_details_depatrmentname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/space_m" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rep Name:"
+                    android:textColor="@color/color_orange"
+                    android:textSize="@dimen/space_m" />
+
+                <TextView
+                    android:id="@+id/textView_order_details_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/space_m" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Collection Point:"
+                    android:textColor="@color/color_orange"
+                    android:textSize="@dimen/space_m" />
+
+                <TextView
+                    android:id="@+id/textView_order_details_collectionpoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/space_m" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Details:"
+                android:textColor="@color/color_orange"
+                android:textSize="@dimen/space_m"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView_order_details_orderdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/space_s_plus"
+                android:layout_weight="10" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remark:"
+                android:textColor="@color/color_orange"
+                android:textSize="@dimen/space_m"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/editText_order_details_remark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/space_m"
+                android:layout_weight="3" />
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_order_details_noshow"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_red"
+                android:drawableLeft="@drawable/ic_round_cancel_24px"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:text="No Show"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_toLeftOf="@id/txtHide" />
+
+            <TextView android:id="@+id/txtHide" android:layout_width="50dp" android:layout_height="1dp"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/button_order_details_pf"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_yellow"
+                android:drawableLeft="@drawable/ic_round_report_problem_24px"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:singleLine="false"
+                android:text="Partially&#10;Fulfilled"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/txtHide" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_order_details_delivered"
+            android:layout_width="300dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_green"
+            android:drawableLeft="@drawable/ic_round_check_circle_24px"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:paddingLeft="100dp"
+            android:text="Delivered"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

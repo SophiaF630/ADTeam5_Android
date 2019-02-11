@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:layout_editor_absoluteY="81dp"
+    tools:context=".MenuActivity">
+
+
+<Button
+    android:id="@+id/button_menu_order"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_weight="1"
+    android:drawableTop="@drawable/ic_round_assignment_24px"
+    android:drawableTint="@color/color_white"
+    android:textSize="20dp"
+    android:textColor="@color/color_white"
+    android:textStyle="bold"
+
+    android:text="@string/order"
+    android:background="@drawable/button"
+    app:layout_constraintBottom_toTopOf="@+id/button_menu_applyvoucher"
+    app:layout_constraintEnd_toEndOf="@+id/button_menu_applyvoucher"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/button_menu_applyvoucher"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0" />
+
+<Button
+    android:id="@+id/button_menu_applyvoucher"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_weight="1"
+    android:drawableTop="@drawable/ic_round_money_24px"
+    android:drawableTint="@color/color_white"
+    android:textSize="20dp"
+    android:textColor="@color/color_white"
+    android:textStyle="bold"
+
+    android:text="@string/apply_voucher"
+    android:background="@drawable/button"
+    app:layout_constraintBottom_toTopOf="@+id/button_menu_voucherapproval"
+    app:layout_constraintEnd_toEndOf="@+id/button_menu_voucherapproval"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/button_menu_voucherapproval"
+    app:layout_constraintTop_toBottomOf="@+id/button_menu_order" />
+
+<Button
+    android:id="@+id/button_menu_voucherapproval"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_weight="1"
+    android:drawableTop="@drawable/ic_round_assignment_turned_in_24px"
+    android:drawableTint="@color/color_white"
+    android:textSize="20dp"
+    android:textColor="@color/color_white"
+    android:textStyle="bold"
+
+    android:text="@string/voucher_approval"
+    android:background="@drawable/button"
+    app:layout_constraintBottom_toTopOf="@+id/button_menu_retrievelist"
+    app:layout_constraintEnd_toEndOf="@+id/button_menu_retrievelist"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/button_menu_retrievelist"
+    app:layout_constraintTop_toBottomOf="@+id/button_menu_applyvoucher" />
+
+<Button
+    android:id="@+id/button_menu_retrievelist"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_weight="1"
+    android:drawableTop="@drawable/ic_round_view_list_24px"
+    android:drawableTint="@color/color_white"
+    android:textSize="20dp"
+    android:textColor="@color/color_white"
+    android:textStyle="bold"
+
+    android:text="@string/retrieve_list"
+    android:background="@drawable/button"
+    app:layout_constraintBottom_toTopOf="@+id/button_menu_myinformation"
+    app:layout_constraintEnd_toEndOf="@+id/button_menu_myinformation"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/button_menu_myinformation"
+    app:layout_constraintTop_toBottomOf="@+id/button_menu_voucherapproval" />
+
+
+<Button
+    android:id="@+id/button_menu_myinformation"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:drawableTop="@drawable/ic_round_account_box_24px"
+    android:drawableTint="@color/color_white"
+    android:textSize="20dp"
+    android:textColor="@color/color_white"
+    android:textStyle="bold"
+
+    android:text="@string/my_information"
+    android:background="@drawable/button"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button_menu_retrievelist" />
+
+
+</LinearLayout>

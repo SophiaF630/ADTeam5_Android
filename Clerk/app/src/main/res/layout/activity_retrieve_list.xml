@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetrieveListActivity">
+
+    <TextView
+        android:id="@+id/textView_title_retrievelist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Retrieve List"
+        android:textColor="@color/color_blue_title"
+        android:textSize="@dimen/space_l"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button_retrieve_summary"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_yellow"
+        android:drawableLeft="@drawable/ic_round_playlist_add_check_24px"
+        android:gravity="center_vertical|center_horizontal|left"
+        android:paddingLeft="10dp"
+        android:singleLine="false"
+        android:text="@string/summary"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title_retrievelist" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_retrieve_summary">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/category"
+            android:textSize="@dimen/space_m_plus" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <ListView
+            android:id="@+id/_dynamic_retrieve_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_retrieve_list_cancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/txtHide"
+            android:background="@drawable/button_red"
+            android:drawableLeft="@drawable/ic_round_cancel_24px"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:text="@string/cancel"
+            android:textColor="@color/color_white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtHide"
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/button_retrieve_list_apply"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtHide"
+            android:background="@drawable/button_green"
+            android:drawableLeft="@drawable/ic_round_check_circle_24px"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:singleLine="false"
+            android:text="@string/retrieve"
+            android:textColor="@color/color_white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!--//顺序可能有所更改，需注意-->
+    <!--//textview 1 名称-->
+
+    <!--//textview 5 标题：已取数量-->
+    <!--//textview 2 已取数量（默认0）-->
+
+    <!--//textview 6 标题:总需求量-->
+    <!--//textview 4 总需求量-->
+
+    <!--//其中2456的比例暂定1:1：1:1，等最终确认的时候再进行微调-->
+
+    <!--//关于星星的点亮后的icon，默认是熄灭状态。需要点亮可以用android自带的，@android:drawable/btn_star_big_on(大概就是off改成on)-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="10">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space_m_plus"
+            android:textColor="@color/color_orange"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/collected"
+                android:layout_weight="1"
+                android:textSize="@dimen/space_s_plus"
+                android:textColor="@color/color_black"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/space_s_plus"
+                android:textColor="@color/color_gray"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/total_need"
+                android:layout_weight="1"
+                android:textSize="@dimen/space_s_plus"
+                android:textColor="@color/color_black"/>
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/space_s_plus"
+                android:textColor="@color/color_gray"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@android:drawable/btn_star_big_off" />
+</LinearLayout>

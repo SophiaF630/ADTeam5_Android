@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IssueVoucherListActivity">
+
+    <TextView
+        android:id="@+id/textView_title_myinformation"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:text="@string/issue_voucher"
+        android:textColor="@color/color_blue_title"
+        android:textSize="@dimen/space_l"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--// 1 row: clerk name-->
+    <!--// 2 row: total price-->
+    <ListView
+        android:id="@+id/issue_voucher_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title_myinformation" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplyVoucherListActivity">
+
+    <TextView
+        android:id="@+id/textView_title_createvoucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Voucher"
+        android:textColor="#00a6ac"
+        android:textSize="@dimen/space_l"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listView_voucherlist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title_createvoucher"
+        app:layout_constraintVertical_bias="0.55" />
+    <!--app:layout_constraintTop_toBottomOf="@+id/textView_title_createvoucher"-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton_applyvoucher_create_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:backgroundTint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_applyvoucher_create_cancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/txtHide"
+            android:background="@drawable/button_red"
+            android:drawableLeft="@drawable/ic_round_cancel_24px"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:text="@string/cancel"
+            android:textColor="@color/color_white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtHide"
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/button_applyvoucher_create_submit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtHide"
+            android:background="@drawable/button_green"
+            android:drawableLeft="@drawable/ic_round_check_circle_24px"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:singleLine="false"
+            android:text="@string/confirm"
+            android:textColor="@color/color_white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

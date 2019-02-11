@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Clerk</string>
+    <string name="host">172.23.212.222/ADTeam5</string>
+    <string name="account">Account</string>
+    <string name="partially_fulfilled">Partially Fulfilled</string>
+
+
+    <string name="assignDeptRepHeader">Current Department Rep:</string>
+    <string name="assignDeptRepButton">Change Department Rep</string>
+    <string name="sayyes">Successfully saved</string>
+
+    <string name="RecordDetailsEmpName">Employee:</string>
+    <string name="label_report">Reason for Rejection:</string>
+    <string name="label_type_your_comment">Please type your reason here</string>
+    <string name="label_submit">Submit</string>
+    <string name="label_cancel">Cancel</string>
+
+    <string name="title_activity_collection_password">CollectionPasswordActivity</string>
+    <string name="CollectionTitle">Please key in 4-digit key upon collection</string>
+
+    <string name="CollectionPointTitle">Collection Point</string>
+    <string name="CollectionPoint">Current collection point:</string>
+    <string name="ChangeCollectionPoint">Select new collection point:</string>
+    <string name="ChangeCollectionPointButton">Submit</string>
+
+
+    <string name="upcomingCollectionHeader1">Collection Date:</string>
+    <string name="upcomingCollectionHeader2">Collection Point:</string>
+    <string name="upcomingCollectionHeader3">Collection Time:</string>
+
+    <string name="log_in">Log In</string>
+    <string name="log_out">Log Out</string>
+    <string name="name">Name</string>
+    <string name="approve">Approve</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="apply">Apply</string>
+    <string name="reject">Reject</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_category">Item Category</string>
+    <string name="Quantity">Quantity</string>
+    <string name="saved">Saved</string>
+    <string name="retrieve">Retrieve</string>
+    <string name="my_information">My Information</string>
+    <string name="retrieve_list">Retrieve List</string>
+    <string name="voucher_approval">Voucher Approval</string>
+    <string name="apply_voucher">Apply Voucher</string>
+    <string name="order">Order</string>
+    <string name="staff_name">Staff Name</string>
+    <string name="department">Department</string>
+    <string name="email">Email</string>
+    <string name="category">Category:</string>
+    <string name="summary">Summary</string>
+    <string name="Cancel_item">Cancel Item</string>
+    <string name="collected">Collected:</string>
+    <string name="total_need">Total：</string>
+    <string name="issue_date">Issue Date:</string>
+    <string name="total_price">Total Price：</string>
+    <string name="total_status">Status：</string>
+    <string name="issue_voucher">Issue Voucher</string>
+    <string name="status">Status:</string>
+</resources>
